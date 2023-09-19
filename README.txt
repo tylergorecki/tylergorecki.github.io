@@ -1,4 +1,4 @@
-# tylergorecki.github.io
+## tylergorecki.github.io
 Created a GitHub portfolio website to share my projects and research experience
 
 Created from the following template: 
