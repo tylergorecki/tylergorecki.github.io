@@ -146,6 +146,9 @@ body {
 /* Sections */
 section {
 	padding: 4rem 2rem;
+}
+
+.container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
