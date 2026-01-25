@@ -1,652 +1,264 @@
 <!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Tyler Gorecki Data Portfolio</title>
+		<title>Tyler Gorecki - Data Science Professional</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="description" content="Data Science Professional - ML, Analytics, Sports Analytics" />
+		<meta name="keywords" content="data science, machine learning, analytics, python, r" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Outline Section -->
-					<section class="Outline">
-						<header>
-							<h6></h6>
-							<h1>Tyler Gorecki</h1>
-							<p>Data Science Professional | Master's in Data Science, University of Virginia</p>
-							<ul class="actions">
-								<li><a href="#Intro" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-							<ul>
-								<li><a href="#Skills"><span class="label">Skills</span></a></li>
-							</ul>
-							<ul>
-								<li><a href="#Projects"><span class="label">Projects</span></a></li>
-							</ul>
-							<ul>
-								<li><a href="#Research"><span class="label">Research</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/lawn.jpg" alt="UVA Lawn" /></span>
-						</div>
-					</section>
-
-				<!-- Introduction Section -->
-				<section id="Intro">
-					<header>
-						<h1>About</h1>
-					</header>
-					<div class="content">
-						<p>I'm a Data Science Professional with a passion for predictive modeling and data-driven decision-making. With a Master's degree in Data Science and a Bachelor's in Applied Statistics with a focus on Business and Finance, I bring both technical expertise and strategic business insight to complex analytics challenges.</p>
-						<p>My experience spans <strong>academic research, business analytics, sports analytics, and public health</strong>, with a particular interest in applications across business, finance, and technology. I'm currently leading data initiatives for UVA Athletics while conducting advanced research in computer vision and sports science.</p>
-					</div>
-				</section>
-				
-				<!-- Skills Section -->
-				<section id="Skills">
-					<header>
-						<h1>Technical Skills</h1>
-					</header>
-					<div class="content">
-						<p><strong>Languages & Core Tools:</strong></p>
-						<ul class="feature-icons">
-							<li class="icon solid fa-laptop">Python</li>
-							<li class="icon solid fa-laptop">R</li>
-							<li class="icon solid fa-cog">SQL</li>
-							<li class="icon solid fa-database">Snowflake</li>
-							<li class="icon solid fa-cloud">Databricks</li>
-							<li class="icon solid fa-code">Git</li>
-							<li class="icon solid fa-chart-bar">Power BI</li>
-							<li class="icon solid fa-table">Excel</li>
-						</ul>
-						<p><strong>Specialized Expertise:</strong> Machine Learning, Bayesian Statistics, Predictive Modeling, Web Scraping, Data Visualization, Dashboard Creation, Computer Vision, Statistical Analysis</p>
-					</div>
-				</section>
-
-				<!-- Projects Header -->
-					<section id="Projects" class="projects">
-						<header>
-							<h1><a href="https://github.com/tylergorecki">Featured Projects</a></h1>
-						</header>
-						<div class="content">
-							<p>
-								All project titles below are hyperlinked to individual GitHub repositories. Visit my <a href="https://github.com/tylergorecki">GitHub profile</a> to explore my complete portfolio and contributions. 
-							</p>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section id="ExpRuns">
-						<header>
-							<h2><a href="https://github.com/tylergorecki/mlb-expected-runs">
-								MLB Expected Runs Project
-							</a></h2>
-						</header>
-						<div class="content">
-							<p>
-								<strong>
-									
-								</strong>
-							</p>
-							<ul>
-								<li>
-									We built a model that simulates each pitch of a half-inning, generating typical baseball outcomes 
-									and returning the number of runs scored, given an input of many unique count/baserunner/lineup/outs 
-									situations. 
-								</li>
-								<li>
-									My role was to code the structure of the function (with live input from group mates), and building a 
-									script that could be run to reproduce the simulations over thousands of innings. 
-								</li>
-								<li>
-									We kept track of the runs scored each inning, also noting the leadoff hitter for each inning to perform 
-									further statistical analysis. The framework was created so that it could be reproduced by individual 
-									teams with specific players. 
-								</li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section id="ExpPoints">
-						<header>
-							<h2><a href="https://github.com/tylergorecki/cfb-expected-points">
-								College Football Expected Points Project
-							</a></h2>
-						</header>
-						<div class="content">
-							<p>
-								<strong>
-									
-								</strong>
-							</p>
-							<ul>
-								<li>
-									Created our own expected points function that takes field position, down, and distance as input, and will output the number of 
-									expected points in many simulations (positive value for team with possession, negative for opponent). 
-								</li>
-								<li>
-									I took the lead by creating the framework of the overall function and creating the play-by-play 
-									simulation until a one team scored. 
-								</li>
-								<li>
-									We used this creation to answer the question of when to go for it or when to attempt a field goal on 4th down with an average 
-									college football kicker. 
-								</li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section id="Strikes">
-						<header>
-							<h2><a href="https://github.com/tylergorecki/StrikeZoneAnalysis">MLB Called Strikes Project</a></h2>
-						</header>
-						<div class="content">
-							<p>
-								<strong>
-									
-								</strong>
-							</p>
-							<ul>
-								<li>
-									This was a project done in the Fall of 2022 as a part of our UVA Sports Analytics and Statistics Laboratory with Samuel Brown 
-									and James Carney. 
-								</li>
-								<li>
-									What started as a project to analyze whether there is a trend among certain hitters who get better stike calls in the MLB turned 
-									into a project on general MLB strike zone analysis. 
-								</li>
-								<li>
-									We created an R-shiny app displaying our findings which can be found <a href="https://sabrown12345.shinyapps.io/CSArticle/">HERE</a>. 
-									It contains stike zones for each hitter (actual and called) and multiple comparisons using our self-created statistic Expected 
-									Strikes Above Average (ESAA) / Expected Strikes per Pitch (ESPP) which is the same just normalized by pitch. 
-								</li>
-							</ul>
-							<!-- <span class="image main"><img src="" alt="" /></span> -->
-						</div>
-					</section>
-
-				<!-- Research & Professional Experience Header -->
-				<section id="Research" class="research">
-					<header>
-						<h1>Professional & Research Experience</h1>
-					</header>
-					<div class="content">
-						<p>
-							I bring hands-on experience across business analytics, sports analytics, and academic research. Below highlights my professional roles and research endeavors, showcasing my technical expertise and collaborative approach to solving complex data challenges.
-						</p>
-					</div>
-				</section>
-
-				<!-- AMEND Consulting Section -->
-				<section id="AMEND">
-					<header>
-						<h2>AMEND Consulting</h2>
-					</header>
-					<div class="content">
-						<p>
-							<strong>
-								Data Scientist (July 2025 - Present)
-							</strong>
-						</p>
-						<ul>
-							<li>
-								Develop and deploy machine learning models for enterprise clients, delivering predictive solutions that drive business value.
-							</li>
-							<li>
-								Lead end-to-end analytics projects from data exploration and model development to deployment and stakeholder communication.
-							</li>
-							<li>
-								Collaborate with cross-functional teams to understand business requirements and translate them into data-driven solutions.
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- SSAC Section -->
-				<section id="SSAC">
-					<header>
-						<h2>UVA Sports Science and Analytics Collective</h2>
-					</header>
-					<div class="content">
-						<p>
-							<strong>
-								Researcher (January 2023 - July 2025)
-							</strong>
-						</p>
-						<ul>
-							<li>
-								Built an innovative data pipeline for the UVA Men's Basketball Team, moving data from API sources to cloud storage to real-time dashboards for performance insights.
-							</li>
-							<li>
-								Developed "ACL Reconstruction Reference Value Dashboard" for clinicians to benchmark patient recoveries post-ACL surgery. View the <a href="https://nak5dy.wixsite.com/uva-ssac/projects">project details and dashboard</a>. 
-							</li>
-							<li>
-								Led data integration and analytical software implementation across UVA Basketball program. 
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- SASL Section -->
-				<section id="SASL">
-					<header>
-						<h2>UVA Sports Analytics and Statistics Laboratory</h2>
-					</header>
-					<div class="content">
-						<p>
-							<strong>
-								Researcher (September 2021 - May 2024)
-							</strong>
-						</p>
-						<ul>
-							<li>
-								Analyzed data for college and professional sports projects using R and Python, delivering actionable insights. 
-							</li>
-							<li>
-								Investigated NFL punting strategies: fair catch vs. return decision-making analysis. 
-							</li>
-							<li>
-								Researched MLB strike zone patterns and developed the Expected Strikes Above Average (ESAA) and Expected Strikes per Pitch (ESPP) metrics. View the <a href="https://sabrown12345.shinyapps.io/CSArticle/">interactive R Shiny app</a>. 
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Visual Intelligence Lab Section -->
-				<section id="VIL">
-					<header>
-						<h2>Visual Intelligence Laboratory</h2>
-					</header>
-					<div class="content">
-						<p>
-							<strong>
-								Researcher (January 2023 - January 2024)
-							</strong>
-						</p>
-						<ul>
-							<li>
-								Collaborated with Professor Stephen Baek on computer vision research projects including "Kinematic Modeling and Computational Analysis of the Human Underwater Undulatory Kick."
-							</li>
-							<li>
-								Applied 3D computer vision techniques to analyze swimmer kinematics during underwater phases (start and turns). Developed generalizable models adaptable across different body types through simulation. 
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Biocomplexity Section -->
-				<section id="Biocomplexity">
-					<header>
-						<h2><a href="https://biocomplexity.virginia.edu/institute/divisions/network-systems-science-and-advanced-computing/computing-global-challenges">UVA Biocomplexity Institute</a></h2>
-					</header>
-					<div class="content">
-						<p>
-							<strong>
-								Research Intern (May 2023 - July 2023)
-							</strong>
-						</p>
-						<ul>
-							<li>
-								Analyzed healthcare facility roles in MRSA transmission and anti-microbial resistant (AMR) infection spread. <a href="https://biocomplexity.virginia.edu/sites/default/files/C4GC2023/Tyler%20Gorecki%20-%20Final%20Poster.pptx.pdf">View research poster</a>.
-							</li>
-							<li>
-								Wrangled large-scale datasets and constructed travel matrices from Virginia insurance claims (2016-2021) using Python for epidemiological modeling. 
-							</li>
-							<li>
-								Executed PatchSim simulations on HPC clusters (Rivanna) to calibrate infection transmission parameters and inform public health policy recommendations. 
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Elements -->
-				<!--
-					<section>
-						<header>
-							<h2>Elements</h2>
-						</header>
-						<div class="content">
-
-							<section>
-								<header>
-									<h3>Text</h3>
-								</header>
-								<div class="content">
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<hr />
-									<h5>Blockquote</h5>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h5>Preformatted</h5>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
-
-print 'Sorted in ' + i + ' iterations.';</code></pre>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Lists</h3>
-								</header>
-								<div class="content">
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Table</h3>
-								</header>
-								<div class="content">
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Buttons</h3>
-								</header>
-								<div class="content">
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Form</h3>
-								</header>
-								<div class="content">
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</div>
-							</section>
-
-						</div>
-					</section>
-				-->
-
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Get in touch</h2>
-						</header>
-						<div class="content">
-							<p></p>
-							<form>
-								<!--
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-								-->
-							</form>
-						</div>
-						<footer>
-							<ul class="items">
-								<li>
-									<h3>Email</h3>
-									<a href="mailto : ttg6nx@virginia.edu">ttg6nx@virginia.edu</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<span>(856) 375-0519</span>
-								</li>
-								<!--
-								<li>
-									<h3>Address</h3>
-									<span>532 Justice Drive, Marlton, NJ 08053</span>
-								</li>
-								-->
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons">
-										<li><a href="https://twitter.com/tg_analytics" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://medium.com/@tylergorecki" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-										<li><a href="https://linkedin.com/in/tylergorecki" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://github.com/tylergorecki/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</footer>
-					</section>
-
-				<!-- Copyright -->
-					<div class="copyright">&copy; Tyler Gorecki. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
-
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar">
+			<div class="nav-container">
+				<div class="nav-logo">Tyler Gorecki</div>
+				<ul class="nav-menu">
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</div>
+		</nav>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="hero-content">
+				<h1>Tyler Gorecki</h1>
+				<p class="subtitle">Data Science Professional</p>
+				<p class="tagline">UVA Master's in Data Science | Machine Learning | AI Applications | Problem Solving</p>
+				<div class="cta-buttons">
+					<a href="https://github.com/tylergorecki" class="btn btn-primary">GitHub</a>
+					<a href="https://linkedin.com/in/tylergorecki" class="btn btn-secondary">LinkedIn</a>
+					<a href="https://twitter.com/tg_analytics" class="btn btn-secondary">Twitter</a>
+					<a href="https://medium.com/@tylergorecki" class="btn btn-secondary">Medium</a>
+				</div>
+			</div>
+		</section>
 
+		<!-- About Section -->
+		<section id="about" class="section about">
+			<div class="container">
+				<h2>About Me</h2>
+				<div class="about-content">
+					<p>I'm a Data Science Professional with a Master's degree in Data Science from the University of Virginia and a Bachelor's in Applied Statistics with a focus on Business and Finance. I specialize in predictive modeling, machine learning, and translating complex data into actionable insights.</p>
+					<p>Currently, I work as a Data Scientist at AMEND Consulting, developing and deploying machine learning solutions for enterprise clients. My background spans business analytics, sports analytics, academic research, and public health applications.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills Section -->
+		<section class="section skills">
+			<div class="container">
+				<h2>Technical Skills</h2>
+				<div class="skills-grid">
+					<div class="skill-category">
+						<h3>Languages</h3>
+						<p>Python, R, SQL</p>
+					</div>
+					<div class="skill-category">
+						<h3>Cloud & Data</h3>
+						<p>Snowflake, Databricks, Git</p>
+					</div>
+					<div class="skill-category">
+						<h3>Visualization</h3>
+						<p>Power BI, Tableau, R Shiny</p>
+					</div>
+					<div class="skill-category">
+						<h3>Specialties</h3>
+						<p>ML, Bayesian Stats, Computer Vision</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Featured Projects Section -->
+		<section id="projects" class="section projects">
+			<div class="container">
+				<h2>Featured Projects</h2>
+				<p class="section-intro">Explore my key data science projects and research work. Visit my <a href="https://github.com/tylergorecki" class="link">GitHub profile</a> for my complete portfolio.</p>
+				
+				<div class="projects-grid">
+					<!-- Project 1 -->
+					<div class="project-card">
+						<div class="project-header">
+							<h3><a href="https://github.com/tylergorecki/mlb-expected-runs">MLB Expected Runs Model</a></h3>
+							<span class="tech-tag">R</span>
+							<span class="tech-tag">Statistics</span>
+						</div>
+						<p>Built a predictive model that simulates baseball pitch-by-pitch outcomes to analyze lineup constructions and expected run values under different scenarios.</p>
+						<ul class="project-highlights">
+							<li>Simulated thousands of half-inning sequences</li>
+							<li>Developed framework for team-specific customization</li>
+							<li>Statistical analysis of lineup strategies</li>
+						</ul>
+					</div>
+
+					<!-- Project 2 -->
+					<div class="project-card">
+						<div class="project-header">
+							<h3><a href="https://github.com/tylergorecki/cfb-expected-points">CFB Expected Points Model</a></h3>
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">ML</span>
+						</div>
+						<p>Developed an expected points model for college football play-by-play data to inform critical coaching decisions on 4th down scenarios.</p>
+						<ul class="project-highlights">
+							<li>Play-by-play simulation framework</li>
+							<li>Field position & down/distance analysis</li>
+							<li>Strategic decision optimization</li>
+						</ul>
+					</div>
+
+					<!-- Project 3 -->
+					<div class="project-card">
+						<div class="project-header">
+							<h3><a href="https://sabrown12345.shinyapps.io/CSArticle/">MLB Strike Zone Analysis</a></h3>
+							<span class="tech-tag">R Shiny</span>
+							<span class="tech-tag">Visualization</span>
+						</div>
+						<p>Interactive dashboard analyzing MLB strike zone patterns with custom statistics (ESAA/ESPP) to identify bias and improve understanding of umpire calls.</p>
+						<ul class="project-highlights">
+							<li>Interactive R Shiny application</li>
+							<li>Custom statistical metrics</li>
+							<li>Hitter/pitcher comparisons</li>
+						</ul>
+					</div>
+
+					<!-- Project 4 -->
+					<div class="project-card">
+						<div class="project-header">
+							<h3>ACL Recovery Dashboard</h3>
+							<span class="tech-tag">Data Viz</span>
+							<span class="tech-tag">Healthcare</span>
+						</div>
+						<p>Developed a reference dashboard for clinicians to benchmark patient recovery outcomes after ACL reconstruction surgery. <a href="https://nak5dy.wixsite.com/uva-ssac/projects" class="link">View project</a></p>
+						<ul class="project-highlights">
+							<li>Patient outcome benchmarking</li>
+							<li>Recovery trajectory visualization</li>
+							<li>Clinical decision support</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section id="experience" class="section experience">
+			<div class="container">
+				<h2>Professional Experience</h2>
+				
+				<div class="experience-timeline">
+					<!-- Current Role -->
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Data Scientist</h3>
+							<p class="company">AMEND Consulting</p>
+							<p class="date">July 2025 - Present</p>
+							<ul>
+								<li>Develop and deploy machine learning models for enterprise clients</li>
+								<li>Lead end-to-end analytics projects from conception to deployment</li>
+								<li>Translate business requirements into data-driven solutions</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- UVA SSAC -->
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Researcher</h3>
+							<p class="company">UVA Sports Science and Analytics Collective</p>
+							<p class="date">January 2023 - July 2025</p>
+							<ul>
+								<li>Built data pipeline for UVA Men's Basketball Team from APIs to dashboards</li>
+								<li>Developed ACL Reconstruction Reference Dashboard for clinical use</li>
+								<li>Led data integration across UVA Athletic programs</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- UVA SASL -->
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Researcher</h3>
+							<p class="company">UVA Sports Analytics and Statistics Laboratory</p>
+							<p class="date">September 2021 - May 2024</p>
+							<ul>
+								<li>Analyzed college and professional sports data using R and Python</li>
+								<li>Developed Expected Strikes Above Average (ESAA) metric for MLB analysis</li>
+								<li>Researched optimal NFL punting strategies</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- VIL -->
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Researcher</h3>
+							<p class="company">Visual Intelligence Laboratory</p>
+							<p class="date">January 2023 - January 2024</p>
+							<ul>
+								<li>Applied 3D computer vision to analyze swimmer kinematics</li>
+								<li>Developed generalizable models for motion analysis</li>
+								<li>Collaborated with faculty on motion modeling research</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Biocomplexity -->
+					<div class="timeline-item">
+						<div class="timeline-marker"></div>
+						<div class="timeline-content">
+							<h3>Research Intern</h3>
+							<p class="company">UVA Biocomplexity Institute</p>
+							<p class="date">May 2023 - July 2023</p>
+							<ul>
+								<li>Analyzed MRSA transmission through healthcare networks</li>
+								<li>Wrangled large datasets and built epidemiological models</li>
+								<li>Executed simulations on HPC clusters to inform public health policy</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="section contact">
+			<div class="container">
+				<h2>Get In Touch</h2>
+				<div class="contact-content">
+					<p>I'm interested in data science, machine learning, analytics, and strategic projects. Feel free to reach out!</p>
+					<div class="contact-info">
+						<div class="contact-item">
+							<i class="fas fa-envelope"></i>
+							<a href="mailto:tgorecki20@gmail.com">tgorecki20@gmail.com</a>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-phone"></i>
+							<span>(856) 375-0519</span>
+						</div>
+					</div>
+					<div class="social-links">
+						<a href="https://github.com/tylergorecki" title="GitHub"><i class="fab fa-github"></i></a>
+						<a href="https://linkedin.com/in/tylergorecki" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://twitter.com/happyfridaynerd" title="Twitter"><i class="fab fa-twitter"></i></a>
+						<a href="https://medium.com/@tylergorecki" title="Medium"><i class="fab fa-medium-m"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; 2026 Tyler Gorecki. All rights reserved.</p>
+			</div>
+		</footer>
 	</body>
 </html>
