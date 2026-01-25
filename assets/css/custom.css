@@ -146,11 +146,14 @@ body {
 /* Sections */
 section {
 	padding: 4rem 2rem;
+	width: 100%;
+	display: block;
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 #about {
@@ -465,6 +468,7 @@ p {
 	padding: 2rem;
 	text-align: center;
 	border-top: 3px solid var(--navy);
+	width: 100%;
 }
 
 .footer p {
@@ -586,12 +590,6 @@ p {
 }
 
 /* Utility Classes */
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 2rem;
-}
-
 a {
 	color: var(--accent);
 	text-decoration: none;
