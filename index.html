@@ -8,6 +8,7 @@
 		<meta name="keywords" content="data science, machine learning, analytics, python, r" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -18,7 +19,9 @@
 					<li><a href="#about">About</a></li>
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#experience">Experience</a></li>
+					<li><a href="blog.html">Writing</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
 				</ul>
 			</div>
 		</nav>
@@ -260,5 +263,28 @@
 				<p>&copy; 2026 Tyler Gorecki. All rights reserved.</p>
 			</div>
 		</footer>
+	<script>
+		(function() {
+			var toggle = document.getElementById('dark-toggle');
+			var html = document.documentElement;
+
+			if (localStorage.getItem('theme') === 'dark') {
+				toggle.querySelector('i').className = 'fas fa-sun';
+			}
+
+			toggle.addEventListener('click', function() {
+				var isDark = html.getAttribute('data-theme') === 'dark';
+				if (isDark) {
+					html.removeAttribute('data-theme');
+					toggle.querySelector('i').className = 'fas fa-moon';
+					localStorage.setItem('theme', 'light');
+				} else {
+					html.setAttribute('data-theme', 'dark');
+					toggle.querySelector('i').className = 'fas fa-sun';
+					localStorage.setItem('theme', 'dark');
+				}
+			});
+		})();
+	</script>
 	</body>
 </html>
