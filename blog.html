@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Writing — Tyler Gorecki</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Articles and writing by Tyler Gorecki on data science, machine learning, and sports analytics." />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar">
+			<div class="nav-container">
+				<a href="index.html" class="nav-logo">Tyler Gorecki</a>
+				<ul class="nav-menu">
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#projects">Projects</a></li>
+					<li><a href="index.html#experience">Experience</a></li>
+					<li><a href="blog.html" class="active">Writing</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<li><button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Page Header -->
+		<div class="writing-hero">
+			<h1>Writing</h1>
+			<p>Articles on data science, machine learning, and sports analytics — published on <a href="https://medium.com/@tylergorecki" style="color: #b3d9ff;">Medium</a>.</p>
+		</div>
+
+		<!-- Articles -->
+		<div class="writing-section">
+			<h2>All Articles</h2>
+
+			<!-- Article 1 — replace with real content -->
+			<article class="article-card">
+				<span class="article-tag">Data Science</span>
+				<h3 class="article-title"><a href="https://medium.com/@tylergorecki" target="_blank" rel="noopener">Article Title One</a></h3>
+				<p class="article-meta">Month DD, YYYY &middot; X min read</p>
+				<p class="article-excerpt">Replace this with a 2–3 sentence excerpt from your article. This gives readers a preview of the main idea and hooks them into clicking through to read the full piece on Medium.</p>
+				<a href="https://medium.com/@tylergorecki" class="article-link" target="_blank" rel="noopener">Read on Medium &rarr;</a>
+			</article>
+
+			<!-- Article 2 — replace with real content -->
+			<article class="article-card">
+				<span class="article-tag">Sports Analytics</span>
+				<h3 class="article-title"><a href="https://medium.com/@tylergorecki" target="_blank" rel="noopener">Article Title Two</a></h3>
+				<p class="article-meta">Month DD, YYYY &middot; X min read</p>
+				<p class="article-excerpt">Replace this with a 2–3 sentence excerpt from your article. This gives readers a preview of the main idea and hooks them into clicking through to read the full piece on Medium.</p>
+				<a href="https://medium.com/@tylergorecki" class="article-link" target="_blank" rel="noopener">Read on Medium &rarr;</a>
+			</article>
+
+			<!-- Article 3 — replace with real content -->
+			<article class="article-card">
+				<span class="article-tag">Machine Learning</span>
+				<h3 class="article-title"><a href="https://medium.com/@tylergorecki" target="_blank" rel="noopener">Article Title Three</a></h3>
+				<p class="article-meta">Month DD, YYYY &middot; X min read</p>
+				<p class="article-excerpt">Replace this with a 2–3 sentence excerpt from your article. This gives readers a preview of the main idea and hooks them into clicking through to read the full piece on Medium.</p>
+				<a href="https://medium.com/@tylergorecki" class="article-link" target="_blank" rel="noopener">Read on Medium &rarr;</a>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; 2026 Tyler Gorecki. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<script>
+			(function() {
+				var toggle = document.getElementById('dark-toggle');
+				var html = document.documentElement;
+
+				if (localStorage.getItem('theme') === 'dark') {
+					toggle.querySelector('i').className = 'fas fa-sun';
+				}
+
+				toggle.addEventListener('click', function() {
+					var isDark = html.getAttribute('data-theme') === 'dark';
+					if (isDark) {
+						html.removeAttribute('data-theme');
+						toggle.querySelector('i').className = 'fas fa-moon';
+						localStorage.setItem('theme', 'light');
+					} else {
+						html.setAttribute('data-theme', 'dark');
+						toggle.querySelector('i').className = 'fas fa-sun';
+						localStorage.setItem('theme', 'dark');
+					}
+				});
+			})();
+		</script>
+	</body>
+</html>
