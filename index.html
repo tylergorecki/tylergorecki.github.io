@@ -15,14 +15,17 @@
 		<nav class="navbar">
 			<div class="nav-container">
 				<div class="nav-logo">Tyler Gorecki</div>
-				<ul class="nav-menu">
+				<ul class="nav-menu" id="nav-menu">
 					<li><a href="#about">About</a></li>
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#experience">Experience</a></li>
 					<li><a href="blog.html">Writing</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
 				</ul>
+				<div class="nav-actions">
+					<button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+					<button class="nav-toggle" id="nav-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+				</div>
 			</div>
 		</nav>
 
@@ -36,7 +39,7 @@
 					<a href="https://github.com/tylergorecki" class="btn btn-primary">GitHub</a>
 					<a href="https://linkedin.com/in/tylergorecki" class="btn btn-secondary">LinkedIn</a>
 					<a href="https://twitter.com/tg_analytics" class="btn btn-secondary">Twitter</a>
-					<a href="https://medium.com/@tylergorecki" class="btn btn-secondary">Medium</a>
+					<a href="blog.html" class="btn btn-secondary">Writing</a>
 				</div>
 			</div>
 		</section>
@@ -46,8 +49,11 @@
 			<div class="container">
 				<h2>About Me</h2>
 				<div class="about-content">
-					<p>I'm a Data Science Professional with a Master's degree in Data Science from the University of Virginia and a Bachelor's in Applied Statistics with a focus on Business and Finance. I specialize in predictive modeling, machine learning, and translating complex data into actionable insights.</p>
-					<p>Currently, I work as a Data Scientist at AMEND Consulting, developing and deploying machine learning solutions for enterprise clients. My background spans business analytics, sports analytics, academic research, and public health applications.</p>
+					<img src="images/headshot.jpg" alt="Tyler Gorecki" class="about-photo" onerror="this.style.display='none'">
+					<div class="about-text">
+						<p>I'm a Data Science Professional with a Master's degree in Data Science from the University of Virginia and a Bachelor's in Applied Statistics with a focus on Business and Finance. I specialize in predictive modeling, machine learning, and translating complex data into actionable insights.</p>
+						<p>Currently, I work as a Senior Technical Analyst in the Data Science practice at AMEND Consulting, developing and deploying machine learning solutions for enterprise clients. My background spans business analytics, sports analytics, academic research, and public health applications.</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -59,19 +65,40 @@
 				<div class="skills-grid">
 					<div class="skill-category">
 						<h3>Languages</h3>
-						<p>Python, R, SQL</p>
+						<ul>
+							<li>Python</li>
+							<li>R</li>
+							<li>SQL</li>
+							<li>Jupyter</li>
+						</ul>
 					</div>
 					<div class="skill-category">
 						<h3>Cloud & Data</h3>
-						<p>Snowflake, Databricks, Git</p>
+						<ul>
+							<li>Snowflake</li>
+							<li>Databricks</li>
+							<li>Git</li>
+							<li>REST APIs</li>
+						</ul>
 					</div>
 					<div class="skill-category">
 						<h3>Visualization</h3>
-						<p>Power BI, Tableau, R Shiny</p>
+						<ul>
+							<li>Power BI</li>
+							<li>Tableau</li>
+							<li>R Shiny</li>
+							<li>Streamlit</li>
+						</ul>
 					</div>
 					<div class="skill-category">
-						<h3>Specialties</h3>
-						<p>ML, Bayesian Stats, Computer Vision</p>
+						<h3>ML & Methods</h3>
+						<ul>
+							<li>Machine Learning</li>
+							<li>Monte Carlo Simulation</li>
+							<li>Bayesian Statistics</li>
+							<li>Vector Search (FAISS)</li>
+							<li>Computer Vision</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -141,6 +168,22 @@
 							<li>MinMax normalized feature scaling</li>
 							<li>Multi-dimensional player comparison</li>
 							<li>Percentile-ranked similarity scores</li>
+						</ul>
+					</div>
+
+					<!-- Project 5 -->
+					<div class="project-card">
+						<div class="project-header">
+							<h3><a href="https://github.com/tylergorecki/polymarket_data">Polymarket Edge Finder</a></h3>
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">FAISS</span>
+							<span class="tech-tag">Streamlit</span>
+						</div>
+						<p>Vector-based analytics system that ingests live Polymarket prediction market data, clusters markets by semantic similarity, and surfaces potential pricing inefficiencies for analysis.</p>
+						<ul class="project-highlights">
+							<li>FAISS vector indexing + KMeans clustering</li>
+							<li>Natural language semantic search across markets</li>
+							<li>Streamlit interface for interactive exploration</li>
 						</ul>
 					</div>
 				</div>
@@ -247,7 +290,7 @@
 							<span>(856) 375-0519</span>
 						</div>
 					</div>
-					<div class="social-links">
+					<div class="social-icons">
 						<a href="https://github.com/tylergorecki" title="GitHub"><i class="fab fa-github"></i></a>
 						<a href="https://linkedin.com/in/tylergorecki" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
 						<a href="https://twitter.com/happyfridaynerd" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -283,6 +326,22 @@
 					toggle.querySelector('i').className = 'fas fa-sun';
 					localStorage.setItem('theme', 'dark');
 				}
+			});
+
+			var navToggle = document.getElementById('nav-toggle');
+			var navMenu = document.getElementById('nav-menu');
+
+			navToggle.addEventListener('click', function() {
+				navMenu.classList.toggle('active');
+				var icon = navToggle.querySelector('i');
+				icon.className = navMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+			});
+
+			navMenu.querySelectorAll('a').forEach(function(link) {
+				link.addEventListener('click', function() {
+					navMenu.classList.remove('active');
+					navToggle.querySelector('i').className = 'fas fa-bars';
+				});
 			});
 		})();
 	</script>

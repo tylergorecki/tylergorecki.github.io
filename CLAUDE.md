@@ -39,11 +39,12 @@ Static single-page portfolio deployed via GitHub Pages (auto-deploy from `main` 
 
 Nav → Hero → About → Skills → Projects → Experience → Contact → Footer
 
-### Projects (4 cards)
+### Projects (5 cards)
 1. MLB Expected Runs Model (R, Statistics)
 2. CFB Expected Points Model (Python, ML)
 3. MLB Strike Zone Analysis (R Shiny, Visualization)
 4. College Basketball Player Similarity (Python, Analytics)
+5. Polymarket Edge Finder (Python, FAISS, Streamlit)
 
 ### Experience (5 entries, newest first)
 1. Senior Technical Analyst — AMEND Consulting (Jul 2025–Present)
@@ -54,9 +55,12 @@ Nav → Hero → About → Skills → Projects → Experience → Contact → Fo
 
 ## Planned Features
 
-- Blog / writing section (linking to Medium posts)
 - Individual project detail pages
-- Dark mode toggle
+- **Resume/CV download button** — Tyler will provide the PDF; add as `.btn.btn-secondary` in the hero `.cta-buttons` with `href="assets/resume.pdf"` (or similar path) and `download` attribute
+
+## Headshot
+
+Profile photo lives at `images/headshot.jpg`. The About section displays it as a round image alongside the bio text. If the file is missing, the `onerror` handler hides it gracefully. LinkedIn blocked automated fetching — Tyler needs to add the file manually.
 
 ## Critical Files
 

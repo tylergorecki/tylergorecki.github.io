@@ -14,14 +14,17 @@
 		<nav class="navbar">
 			<div class="nav-container">
 				<a href="index.html" class="nav-logo">Tyler Gorecki</a>
-				<ul class="nav-menu">
+				<ul class="nav-menu" id="nav-menu">
 					<li><a href="index.html#about">About</a></li>
 					<li><a href="index.html#projects">Projects</a></li>
 					<li><a href="index.html#experience">Experience</a></li>
 					<li><a href="blog.html" class="active">Writing</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
-					<li><button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
 				</ul>
+				<div class="nav-actions">
+					<button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+					<button class="nav-toggle" id="nav-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+				</div>
 			</div>
 		</nav>
 
@@ -39,7 +42,7 @@
 				<span class="article-tag">Artificial Intelligence</span>
 				<h3 class="article-title"><a href="https://medium.com/@tylergorecki/from-context-engineering-to-company-intelligence-why-company-knowledge-bases-are-next-7e5cde6ddbcd" target="_blank" rel="noopener">From Context Engineering to Company Intelligence: Why Company Knowledge Bases are Next</a></h3>
 				<p class="article-meta">April 2026</p>
-				<p class="article-excerpt">The real step-change in working with agentic coding tools didn't come from better prompts — it came from better context. This piece traces the shift from prompt engineering to context engineering, and argues that company-specific knowledge bases are the logical next frontier for unlocking AI's full value inside organizations.</p>
+				<p class="article-excerpt">The real step-change in working with agentic coding tools didn't come from better prompts, it came from better context. This piece traces the shift from prompt engineering to context engineering, and argues that company-specific knowledge bases are the logical next frontier for unlocking AI's full value inside organizations.</p>
 				<a href="https://medium.com/@tylergorecki/from-context-engineering-to-company-intelligence-why-company-knowledge-bases-are-next-7e5cde6ddbcd" class="article-link" target="_blank" rel="noopener">Read on Medium &rarr;</a>
 			</article>
 
@@ -55,7 +58,7 @@
 				<span class="article-tag">Artificial Intelligence</span>
 				<h3 class="article-title"><a href="https://medium.com/@tylergorecki/beyond-the-buzzwords-unpacking-the-genai-agent-workflow-stack-a6ef4d1d0d64" target="_blank" rel="noopener">Beyond the Buzzwords: Unpacking the GenAI → Agent → Workflow Stack</a></h3>
 				<p class="article-meta">December 14, 2025</p>
-				<p class="article-excerpt">Jensen Huang declared 2025 the "Year of the Agent," but GenAI, agents, and workflows get conflated in ways that confuse leaders and stall real adoption. This breakdown untangles the full stack — from generative AI foundations to agentic reasoning to automated workflows — so you can cut through the consulting buzzwords and understand what's actually changing.</p>
+				<p class="article-excerpt">Jensen Huang declared 2025 the "Year of the Agent," but GenAI, agents, and workflows get conflated in ways that confuse leaders and stall real adoption. This breakdown untangles the full stack, from generative AI foundations to agentic reasoning to automated workflows, so you can cut through the consulting buzzwords and understand what's actually changing.</p>
 				<a href="https://medium.com/@tylergorecki/beyond-the-buzzwords-unpacking-the-genai-agent-workflow-stack-a6ef4d1d0d64" class="article-link" target="_blank" rel="noopener">Read on Medium &rarr;</a>
 			</article>
 
@@ -88,6 +91,22 @@
 						toggle.querySelector('i').className = 'fas fa-sun';
 						localStorage.setItem('theme', 'dark');
 					}
+				});
+
+				var navToggle = document.getElementById('nav-toggle');
+				var navMenu = document.getElementById('nav-menu');
+
+				navToggle.addEventListener('click', function() {
+					navMenu.classList.toggle('active');
+					var icon = navToggle.querySelector('i');
+					icon.className = navMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+				});
+
+				navMenu.querySelectorAll('a').forEach(function(link) {
+					link.addEventListener('click', function() {
+						navMenu.classList.remove('active');
+						navToggle.querySelector('i').className = 'fas fa-bars';
+					});
 				});
 			})();
 		</script>
